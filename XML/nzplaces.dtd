@@ -1,0 +1,49 @@
+<!-- ===================================================== -->
+<!-- No ENTITIES were harmed during the making of this DTD -->
+<!-- ===================================================== -->
+
+
+<!-- ROOT -->
+<!ELEMENT nz (region*)>
+
+
+<!-- REGION -->
+<!ELEMENT region (place*)>
+    <!ATTLIST region
+                id ID #REQUIRED
+                img #IMPLIED>
+
+
+<!-- INSIDE A REGION -->
+<!ELEMENT place (name+, loc, pop?, img?, desc*)>
+    <!ATTLIST place
+                id ID #REQUIRED
+                type (capital | major city | city | small city | coastal city | amusement park | vacation | nature) #REQUIRED>
+
+<!ELEMENT name (#PCDATA)>
+
+<!ELEMENT loc (#PCDATA)>
+    <!ATTLIST loc
+                gps CDATA #IMPLIED>
+
+<!ELEMENT pop (#PCDATA)>
+
+<!ELEMENT img EMPTY>
+    <!ATTLIST img
+                src CDATA #REQUIRED
+                alt CDATA #REQUIRED>
+
+<!ELEMENT desc (refplace | refregion | #PCDATA | date | pop | img | loc)*>
+
+<!ELEMENT date (#PCDATA)>
+
+
+<!-- QUOTE MARKUPS -->
+<!ELEMENT refplace (#PCDATA)>
+    <!ATTLIST refplace
+                id IDREF #REQUIRED>
+
+<!ELEMENT refregion (#PCDATA)>
+    <!ATTLIST refregion
+                id IDREF #REQUIRED>
+

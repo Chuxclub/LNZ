@@ -1,0 +1,59 @@
+<?xml version = "1.0"?>
+<!DOCTYPE nz SYSTEM "nzplaces.dtd">
+
+<nz>
+
+    <region id = "Otago" img="langfr-800px-Otago_in_New_Zealand.svg.png">
+        <place id="wanaka" type="vacation">
+
+            <name> Wanaka </name>
+
+            <loc gps="44° 41′ 38″ sud, 169° 08′ 10″ est">
+                Otago, région de l'île du Sud de Nouvelle-Zélande
+            </loc>
+
+            <pop>5 037 habitants</pop>
+
+            <img src="560px-New_Zealand_relief_map.jpg" alt="Lake_Wanaka_View.jpg" />
+            <img src="11879235503_894721dde7_b.jpg" alt="24202789152_6288c78295_b.jpg" />
+
+            <desc>
+                Wanaka est une ville de l'Otago, région de l'île du Sud de Nouvelle-Zélande.
+                Elle est située à l'extrémité Sud du lac <refplace id="wanaka">Wanaka</refplace>, à côté du déversoir du lac à la Clutha.
+                C'est la porte d'entrée vers le parc national du <refplace id="Mount Aspiring">mont Aspiring</refplace>.
+                Wanaka est avant tout une station balnéaire, tant d'été que d'hiver, et est basée sur
+                les nombreuses activités de plein air.
+            </desc>
+        </place>
+    </region>
+
+    <region id="Te Wāhipounamu" img="800px-NZ_Te_Wahipounamu_NTNL_parks.svg">
+        <place id="Mount Aspiring" type="nature">
+
+            <name> Mount Aspiring </name>
+
+            <loc gps="44° 41′ 38″ sud, 169° 08′ 10″ est">
+                Otago, région de l'île du Sud de Nouvelle-Zélande
+            </loc>
+
+            <pop> 0 habitant</pop>
+
+            <img src="560px-New_Zealand_relief_map.jpg" alt="Lake_Wanaka_View.jpg" />
+            <img src="11879235503_894721dde7_b.jpg" alt="24202789152_6288c78295_b.jpg" />
+
+            <desc>
+                Le parc national du <refplace id="Mount Aspiring">Mont Aspiring</refplace> (anglais : Mount Aspiring National Park)
+                est situé sur l'île du Sud de la Nouvelle-Zélande et fait partie de la région appelée
+                <refregion id="Te Wāhipounamu">Te Wāhipounamu</refregion>, qui est sur la liste du patrimoine mondial de l'UNESCO.
+                Fondé en <date>1964</date>, il est le dixième parc national néo-zélandais.
+
+                Recouvrant 3 555 km2 à la pointe sud des Alpes du Sud, à l'ouest du lac Wanaka, il est très visité
+                par les néo-zélandais, qui y vont faire des randonnées ou de l'alpinisme.
+                Le <refplace id="Mount Aspiring">mont Aspiring</refplace> (de 3 033 m) lui donne son nom anglophone,
+                son nom māori étant Tititea. D'autres pics importants se situent dans le parc, dont le mont Pollux (2 542 m)
+                et le mont Brewster (2 519 m).
+            </desc>
+        </place>
+    </region>
+
+</nz>
