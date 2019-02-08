@@ -3,57 +3,186 @@
 
 <nz>
 
-    <region id = "Otago" img="langfr-800px-Otago_in_New_Zealand.svg.png">
-        <place id="wanaka" type="vacation">
+    <!-- OTAGO -->
+    <region id = "Otago" map="langfr-800px-Otago_in_New_Zealand.svg.png">
 
+        <nature>
+            <wildlife hazards="no">
+                <img src="Lake_Wanaka_View.jpg" alt="Beautiful picture here" />
+                <img src="11879235503_894721dde7_b.jpg" alt="24202789152_6288c78295_b.jpg" />
+            </wildlife>
+        </nature>
+
+
+        <place id="wanaka" map="langfr-800px-Otago_in_New_Zealand.svg.png">
             <name> Wanaka </name>
-
             <loc gps="44° 41′ 38″ sud, 169° 08′ 10″ est">
                 Otago, région de l'île du Sud de Nouvelle-Zélande
-            </loc>
 
-            <pop>5 037 habitants</pop>
-
-            <img src="560px-New_Zealand_relief_map.jpg" alt="Lake_Wanaka_View.jpg" />
-            <img src="11879235503_894721dde7_b.jpg" alt="24202789152_6288c78295_b.jpg" />
-
-            <desc>
                 Wanaka est une ville de l'Otago, région de l'île du Sud de Nouvelle-Zélande.
                 Elle est située à l'extrémité Sud du lac <refplace id="wanaka">Wanaka</refplace>, à côté du déversoir du lac à la Clutha.
-                C'est la porte d'entrée vers le parc national du <refplace id="Mount Aspiring">mont Aspiring</refplace>.
-                Wanaka est avant tout une station balnéaire, tant d'été que d'hiver, et est basée sur
-                les nombreuses activités de plein air.
-            </desc>
-        </place>
-    </region>
-
-    <region id="Te Wāhipounamu" img="800px-NZ_Te_Wahipounamu_NTNL_parks.svg">
-        <place id="Mount Aspiring" type="nature">
-
-            <name> Mount Aspiring </name>
-
-            <loc gps="44° 41′ 38″ sud, 169° 08′ 10″ est">
-                Otago, région de l'île du Sud de Nouvelle-Zélande
             </loc>
 
-            <pop> 0 habitant</pop>
+                <economy>
+                    <placefunc type="tourism"/>
+                    <jobsopp level="low" diversity="none">
+                        Wanaka est avant tout une station balnéaire, tant d'été que d'hiver, et est basée sur
+                        les nombreuses activités de plein air.
+                    </jobsopp>
+                    <pop>5 037 habitants</pop>
+                </economy>
 
-            <img src="560px-New_Zealand_relief_map.jpg" alt="Lake_Wanaka_View.jpg" />
-            <img src="11879235503_894721dde7_b.jpg" alt="24202789152_6288c78295_b.jpg" />
-
-            <desc>
-                Le parc national du <refplace id="Mount Aspiring">Mont Aspiring</refplace> (anglais : Mount Aspiring National Park)
-                est situé sur l'île du Sud de la Nouvelle-Zélande et fait partie de la région appelée
-                <refregion id="Te Wāhipounamu">Te Wāhipounamu</refregion>, qui est sur la liste du patrimoine mondial de l'UNESCO.
-                Fondé en <date>1964</date>, il est le dixième parc national néo-zélandais.
-
-                Recouvrant 3 555 km2 à la pointe sud des Alpes du Sud, à l'ouest du lac Wanaka, il est très visité
-                par les néo-zélandais, qui y vont faire des randonnées ou de l'alpinisme.
-                Le <refplace id="Mount Aspiring">mont Aspiring</refplace> (de 3 033 m) lui donne son nom anglophone,
-                son nom māori étant Tititea. D'autres pics importants se situent dans le parc, dont le mont Pollux (2 542 m)
-                et le mont Brewster (2 519 m).
-            </desc>
+                <social>
+                        C'est la porte d'entrée vers le parc national du <refplace id="Mount Aspiring">mont Aspiring</refplace>.
+                </social>
         </place>
     </region>
 
+
+    <!-- TE WAHIPOUNAMU -->
+    <region id="Te Wāhipounamu" map="800px-NZ_Te_Wahipounamu_NTNL_parks.svg">
+
+        <nature>
+            <weather humidity="wet" temperature="cold" hazards="missing">
+                <img src="560px-New_Zealand_relief_map.jpg" alt="Lake_Wanaka_View.jpg" />
+                <img src="11879235503_894721dde7_b.jpg" alt="24202789152_6288c78295_b.jpg" />
+            </weather>
+
+            <wildlife hazards="missing">
+                <img src="560px-New_Zealand_relief_map.jpg" alt="Lake_Wanaka_View.jpg" />
+                <img src="11879235503_894721dde7_b.jpg" alt="24202789152_6288c78295_b.jpg" />
+            </wildlife>
+        </nature>
+
+
+        <place id="Mount Aspiring" map="800px-NZ_Te_Wahipounamu_NTNL_parks.svg">
+
+            <name> Mount Aspiring </name>
+            <loc gps="44° 41′ 38″ sud, 169° 08′ 10″ est">
+                Te Wāhipounamu, région de l'île du Sud de Nouvelle-Zélande
+
+                Le parc national du <refplace id="Mount Aspiring">Mont Aspiring</refplace> (anglais : Mount Aspiring National Park)
+                est situé sur l'île du Sud de la Nouvelle-Zélande et fait partie de la région appelée
+                <refregion id="Te Wāhipounamu">Te Wāhipounamu</refregion>
+            </loc>
+
+
+            <economy>
+                <placefunc type="tourism">
+                    Il est très visité par les néo-zélandais, qui y vont faire des randonnées ou de l'alpinisme.
+                </placefunc>
+
+                <jobsopp level="very_low" diversity="none"/>
+                <services level="low" diversity="none"/>
+
+                <pop> 0 habitant </pop>
+            </economy>
+
+            <social>
+                    Le parc national du Mount Aspiring est sur la liste du patrimoine mondial de l'UNESCO.
+                    <history> Fondé en <date>1964</date> </history>, il est le dixième parc national néo-zélandais.
+
+                    <culture>Recouvrant 3 555 km2 à la pointe sud des Alpes du Sud, à l'ouest du lac Wanaka, il est très visité
+                    par les néo-zélandais, qui y vont faire des randonnées ou de l'alpinisme.</culture>
+                    Le <refplace id="Mount Aspiring">mont Aspiring</refplace> (de 3 033 m) lui donne son nom anglophone,
+                    son nom māori étant Tititea. D'autres pics importants se situent dans le parc, dont le mont Pollux (2 542 m)
+                    et le mont Brewster (2 519 m).
+            </social>
+
+        </place>
+    </region>
+
+
+    <!-- AUCKLAND -->
+    <region id="Auckland" map="langfr-800px-Auckland_in_New_Zealand.svg.png">
+
+        <nature>
+            <weather humidity="wet" temperature="warm" hazards="missing">
+                Auckland a un climat océanique très doux, avec des étés chauds et humides et des hivers doux et très pluvieux.
+                C'est la ville avec le climat le plus chaud du pays ; de 2003 à 2006 elle a également été la plus ensoleillée,
+                avec une moyenne de 2 170 heures de soleil par an7. La température maximale moyenne en février est de 23,7°C,
+                et en juillet de 14,5 °C. Le maximum jamais enregistré est de 30,5 °C, le minimum −2,5 °C.
+
+                Les précipitations sont abondantes toute l'année, avec une moyenne de 1 240 mm par an répartis sur 137 jours de pluie.
+                Les conditions varient selon la région de la ville en raison de sa géographie variée. Il y a donc des records de température
+                intra-muros officieux, dont le maximum de 32,4 °C à Henderson en février 19989. Le 27 juillet 1939, Auckland vit
+                la seule tombée de neige connue de son histoire.
+            </weather>
+
+            <geology type="volcanic">
+                Auckland est à cheval sur les volcans du champ volcanique monogénétique d'Auckland.
+                Il y a environ cinquante volcans prenant des formes différentes (cônes, lacs, lagons, îles, dépressions…)
+                et plusieurs ont produit de grandes coulées de lave. La plus grande partie des cônes a été partiellement
+                ou entièrement extraite. Les volcans sont considérés éteints, quoique le champ volcanique lui-même soit dormant.
+
+                Le volcan le plus grand et le plus jeune est l'île Rangitoto, formé dans les 1 000 dernières années.
+                Ses éruptions ont détruit les établissements maori de l'île Motutapu il y a 700 ans.
+                Sa taille, sa symétrie, sa position à l'entrée du port de Waitemata et le fait qu'il soit visible
+                depuis de nombreux endroits de la région d'Auckland en ont fait le symbole naturel de la ville.
+            </geology>
+
+            <wildlife hazards="missing">
+                Peu d'espèces d'oiseaux et d'insectes y vivent à cause de la terre riche en acides et de la flore poussant sur la terre rocheuse.
+            </wildlife>
+        </nature>
+
+
+        <place id="Auckland city" map="Auckland_WV_districts_map_EN.png">
+
+            <name> Auckland City </name>
+            <loc gps="44° 41′ 38″ sud, 169° 08′ 10″ est">
+                Auckland est située sur et autour d'un isthme, reliant la Péninsule de Northland au reste de l'île du Nord,
+                large de moins de deux kilomètres à son point le plus étroit, situé au sud à Otahuhu entre l'anse Mangere
+                et la rivière Tamaki.
+            </loc>
+
+
+            <economy>
+                <placefunc type="businesses">
+                    Il est très visité par les néo-zélandais, qui y vont faire des randonnées ou de l'alpinisme.
+                </placefunc>
+
+                <jobsopp level="very_high" diversity="diverse"/>
+                <services level="very_high" diversity="diverse"/>
+
+                <pop> 0 habitant </pop>
+
+                <housing price="very_expensive"/>
+            </economy>
+
+            <social>
+                <history>L'isthme fut tout d'abord occupé par les Māori qui s'y établirent autour de l'an 1350, attirés par les
+                terres fertiles et riches de la région. Dans un premier temps, les Māori attribuèrent le nom Tamaki Makau
+                Rau à la ville. Beaucoup de pa (villages fortifiés) y furent construits, particulièrement sur les volcans
+                (aujourd'hui, il est toujours possible d'observer les traces de pa, notamment sur les anciens volcans
+                que sont le Mont Éden et le One Tree Hill). La population Maori de la région avant l'arrivée des Européens
+                est estimée à environ 20 000 personnes. L'introduction des armes à feu, d'abord dans le Northland,
+                perturbe l'équilibre des pouvoirs et mène à des guerres inter-iwi dévastatrices, ayant pour conséquence l
+                e déplacement d'iwi qui se réfugient dans des régions moins susceptibles aux raids, à l'intérieur des terres.
+
+                Par la suite, la région abrite relativement peu de Maori lors du début de la colonisation européenne de la Nouvelle-Zélande.
+                Il n'y a toutefois pas de preuve que ce soit à cause d'une politique délibérée de la part des Européens.
+
+                Lors de la signature du traité de Waitangi le <date>6 février 1840</date>, le nouveau Gouverneur de Nouvelle-Zélande,
+                William Hobson, avait pour mission de choisir une capitale pour la nouvelle colonie. Il choisit Auckland
+                même si à l'époque Port Nicholson (aujourd'hui Wellington), était vu comme meilleur choix du fait de sa
+                proximité de l'île du Sud, qui était en train d'être colonisée assez rapidement. En même temps, Auckland
+                était la capitale et ville principale de la province d'Auckland ; elle le restera jusqu'à l'abolition
+                du système provincial en 1876. Le premier colon à s'établir la même année de la fondation de la ville
+                dans l'isthme d'Auckland, fut un médecin écossais nommé John Logan Campbell (1817 – 1912), qui y
+                construisit donc la première maison (Acacia Cottage) et ouvrit le premier commerce. Il deviendra par la
+                suite un personnage important dans la vie économique du pays, avant de se lancer dans la politique et
+                devenir membre du Parlement de Nouvelle-Zélande, puis maire d'Auckland durant un an à la fin de sa vie.
+
+                À partir de l'installation de Campbell, l'immigration vers la ville resta forte même après la perte de
+                son statut de capitale nationale en faveur de Wellington en <date>1865</date>.</history>
+
+                <culture>Auckland abrite une population cosmopolite. La plus grande partie se revendique d'origine
+                européenne (surtout britannique), mais il y a de grandes communautés Maori, Polynésienne, et Asiatique.
+                Auckland est la ville au monde qui possède la plus grande population d'origine polynésienne, ainsi que
+                la proportion la plus haute de personnes d'origine asiatique du pays.</culture>
+            </social>
+
+        </place>
+    </region>
 </nz>

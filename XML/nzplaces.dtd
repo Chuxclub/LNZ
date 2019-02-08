@@ -2,48 +2,97 @@
 <!-- No ENTITIES were harmed during the making of this DTD -->
 <!-- ===================================================== -->
 
+<!-- Well, until now... -->
+<!ENTITY % info "(refplace | refregion | loc | date | img | #PCDATA)*">
+
+
+<!-- GLOBAL MARKUPS -->
+<!ELEMENT date (#PCDATA)>
+
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+            src CDATA #REQUIRED
+            alt CDATA #REQUIRED>
+
+<!ELEMENT refplace (#PCDATA)>
+<!ATTLIST refplace
+            id IDREF #REQUIRED>
+
+<!ELEMENT refregion (#PCDATA)>
+<!ATTLIST refregion
+            id IDREF #REQUIRED>
 
 <!-- ROOT -->
 <!ELEMENT nz (region*)>
 
 
-<!-- REGION -->
-<!ELEMENT region (place*)>
-    <!ATTLIST region
-                id ID #REQUIRED
-                img #IMPLIED>
+<!-- LOCATION-->
+<!ELEMENT region (nature?, place+)>
+<!ATTLIST region
+             id ID #REQUIRED
+             map CDATA #REQUIRED>
 
 
-<!-- INSIDE A REGION -->
-<!ELEMENT place (name+, loc, pop?, img?, desc*)>
-    <!ATTLIST place
-                id ID #REQUIRED
-                type (capital | major city | city | small city | coastal city | amusement park | vacation | nature) #REQUIRED>
+<!ELEMENT place (name+, loc, economy, social?)>
+<!ATTLIST place
+            id ID #REQUIRED
+            map CDATA #REQUIRED>
 
 <!ELEMENT name (#PCDATA)>
 
-<!ELEMENT loc (#PCDATA)>
-    <!ATTLIST loc
-                gps CDATA #IMPLIED>
+<!ELEMENT loc ((refplace | refregion | #PCDATA)* | EMPTY)>
+<!ATTLIST loc
+            gps CDATA #IMPLIED>
+
+
+<!-- NATURE -->
+<!ELEMENT nature (weather?, geology?, wildlife?, img*)>
+
+
+<!ELEMENT weather (%info; | EMPTY)>
+<!ATTLIST weather
+            humidity (very wet | wet | normal | dry | desert) #REQUIRED
+            temperature (freezing | cold | cool | normal | warm | hot | hell) #REQUIRED
+            hazards (storms | tornadoes | cyclones | none | missing) #REQUIRED>
+
+<!ELEMENT geology (%info; | EMPTY)>
+<!ATTLIST geology
+            type (volcanic | mountainous | grassy plain | forests | flat | seashore) #REQUIRED>
+
+<!ELEMENT wildlife (%info; | EMPTY)>
+<!ATTLIST wildlife
+            hazards (yes | no | missing) #REQUIRED>
+
+
+
+<!-- ECONOMY -->
+<!ELEMENT economy (placefunc, jobsopp, pop, services?, housing?)>
+
+
+<!ELEMENT placefunc EMPTY>
+<!ATTLIST placefunc
+            type (agriculture | industries | tourism | businesses | mixed | capital) #REQUIRED>
+
+<!ELEMENT jobsopp (%info; | EMPTY)>
+<!ATTLIST jobsopp
+            level (very_low | low | average | high | very_high) #REQUIRED
+            diversity (none | average | diverse) #REQUIRED>
 
 <!ELEMENT pop (#PCDATA)>
 
-<!ELEMENT img EMPTY>
-    <!ATTLIST img
-                src CDATA #REQUIRED
-                alt CDATA #REQUIRED>
+<!ELEMENT services (%info; | EMPTY)>
+<!ATTLIST services
+            level  (very_low | low | average | high | very_high) #REQUIRED
+            diversity  (none | average | diverse) #REQUIRED>
 
-<!ELEMENT desc (refplace | refregion | #PCDATA | date | pop | img | loc)*>
+<!ELEMENT housing (%info; | EMPTY)>
+<!ATTLIST housing
+            price  (very_cheap | cheap | average | expensive | very_expensive) #REQUIRED>
 
-<!ELEMENT date (#PCDATA)>
 
+<!-- SOCIAL -->
+<!ELEMENT social (%info; | history | politics | culture)*>
 
-<!-- QUOTE MARKUPS -->
-<!ELEMENT refplace (#PCDATA)>
-    <!ATTLIST refplace
-                id IDREF #REQUIRED>
-
-<!ELEMENT refregion (#PCDATA)>
-    <!ATTLIST refregion
-                id IDREF #REQUIRED>
-
+<!ELEMENT history %info;>
+<!ELEMENT politics %info;>
+<!ELEMENT culture %info;>
