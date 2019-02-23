@@ -1,3 +1,8 @@
+body
+{
+    background: floralwhite;
+}
+
 .caption
 {
     text-align: center;
@@ -8,7 +13,7 @@
 .content
 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 4%;
     padding : 50px;
 }
 
@@ -18,16 +23,9 @@
     margin-bottom: 30px;
 }
 
-.frame
-{
-    border: 1px solid #999;
-    padding: 18px 18px 18px 18px;
-    margin: 18px 18px 18px 18px;
-}
-
 .header
 {
-    background-color: #E3F2FD;
+    background-color: #B3E5FC;
     padding : 2%;
     text-align: center;
 }
@@ -35,9 +33,9 @@
 .footer
 {
     width: 100%;
-    background-color: #E3F2FD;
+    background-color: #B3E5FC;
     padding: 2%;
-    border: 0px;
+    border: 0;
     text-align: center;
     vertical-align: center;
 }
@@ -46,15 +44,4 @@
 {
     height: 35%;
     width: 35%;
-}
-
-table, tr
-{
-    border : 1px solid #999;
-}
-
-td
-{
-    border : 1px solid #999;
-    margin : 0 20px 0 20px;
 }
