@@ -1,7 +1,7 @@
 <map version="freeplane 1.7.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
 <node TEXT="New Zealand Places" LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_299154900" CREATED="1549276366098" MODIFIED="1549632121270" BACKGROUND_COLOR="#ccffff"><hook NAME="MapStyle" zoom="1.5" layout="OUTLINE">
-    <properties show_icon_for_attributes="true" fit_to_viewport="false" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
+    <properties fit_to_viewport="false" show_icon_for_attributes="true" show_note_icons="true" edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -82,11 +82,9 @@
 <node TEXT="Housing" ID="ID_747985463" CREATED="1549631851609" MODIFIED="1549631877517"/>
 </node>
 <node TEXT="Social" LOCALIZED_STYLE_REF="styles.subsubtopic" ID="ID_1017341625" CREATED="1549631879375" MODIFIED="1549631890056">
-<node TEXT="Description" ID="ID_1619918384" CREATED="1549632271757" MODIFIED="1549632279132">
 <node TEXT="History" ID="ID_1542234114" CREATED="1549631892657" MODIFIED="1549631915351"/>
 <node TEXT="Politics" ID="ID_1625394073" CREATED="1549631918812" MODIFIED="1549631924480"/>
 <node TEXT="Atmosphere" ID="ID_888638083" CREATED="1549631919810" MODIFIED="1549631928144"/>
-</node>
 </node>
 </node>
 </node>

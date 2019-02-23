@@ -138,14 +138,12 @@
 
 
             <economy>
-                <placefunc type="businesses">
-                    Il est très visité par les néo-zélandais, qui y vont faire des randonnées ou de l'alpinisme.
-                </placefunc>
+                <placefunc type="businesses"/>
 
                 <jobsopp level="very_high" diversity="diverse"/>
                 <services level="very_high" diversity="diverse"/>
 
-                <pop> 0 habitant </pop>
+                <pop> 1 529 300 habitants </pop>
 
                 <housing price="very_expensive"/>
             </economy>
