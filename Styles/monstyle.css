@@ -1,0 +1,24 @@
+/* Style qui s'applique à l'ensemble du corps du document */
+body{
+    background-color: lightslategrey; /* Couleur de fond de la page : toutes les couleurs prédéfinies sont définies ici : https://www.w3.org/TR/css-color-4/#named-colors */
+}
+
+/*
+Style qui s'applique aux tableaux
+ */
+table{
+    border-style : solid; /* une ligne pour la bordure */
+    border-color : black; /* la bordure est de couleur noire */
+    border-width : 2px; /* épaisseur de la bordure de 2 pixels */
+    text-align: center; /* pour que le texte soit centré */
+    border-collapse: collapse; /* pour que les bordures des cases et du tableau soient fusionnées */
+    margin : auto; /* pour que le tableau soit centré */
+}
+
+/*
+Style qui s'applique aux cases des tableaux
+ */
+td,th{
+    border-style : solid;
+    border-color : black;
+}

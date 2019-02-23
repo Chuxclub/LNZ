@@ -1,0 +1,60 @@
+.caption
+{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.content
+{
+    text-align: center;
+    margin-bottom: 20px;
+    padding : 50px;
+}
+
+.description
+{
+    text-align:center;
+    margin-bottom: 30px;
+}
+
+.frame
+{
+    border: 1px solid #999;
+    padding: 18px 18px 18px 18px;
+    margin: 18px 18px 18px 18px;
+}
+
+.header
+{
+    background-color: #E3F2FD;
+    padding : 2%;
+    text-align: center;
+}
+
+.footer
+{
+    width: 100%;
+    background-color: #E3F2FD;
+    padding: 2%;
+    border: 0px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.miniature
+{
+    height: 35%;
+    width: 35%;
+}
+
+table, tr
+{
+    border : 1px solid #999;
+}
+
+td
+{
+    border : 1px solid #999;
+    margin : 0 20px 0 20px;
+}
