@@ -1,48 +1,76 @@
+/* ================ GLOBAL ELEMENTS ================ */
+
 body
 {
-    background: floralwhite;
-    margin: 0px;
+  font-family: 'Mali', cursive;
+  background: floralwhite;
+  margin: 0px;
+  text-align: center;
 }
 
-.caption
+a:link
 {
-    text-align: center;
-    font-size: 12px;
+  text-decoration: none;
 }
 
-
-.content
+a:hover
 {
-    text-align: center;
-    margin-bottom: 4%;
-    padding : 50px;
+  text-decoration: none;
+  color:red;
 }
 
-.description
-{
-    text-align:center;
-    margin-bottom: 30px;
-}
+
+/* ================ HEADER ELEMENTS ================ */
 
 .header
 {
+    font-family: 'Lobster',cursive;
     background-color: #B3E5FC;
+    border-bottom: outset;
+    border-color: #6cccf9;
     padding : 2%;
-    text-align: center;
 }
 
-.footer
+
+/* ================ CONTENT ELEMENTS ================ */
+
+.description
 {
-    width: 100%;
-    background-color: #B3E5FC;
-    padding: 2%;
-    border: 0;
-    text-align: center;
-    vertical-align: center;
+    margin: 3% 0 0 0;
+}
+
+
+/* ================ NAV ELEMENTS ================ */
+
+.nav
+{
+    margin-bottom: 2%;
+    padding : 50px;
 }
 
 .miniature
 {
-    height: 35%;
-    width: 35%;
+    height: 30%;
+    width: 30%;
+}
+
+.frame
+{
+    font-size: 12px;
+}
+
+/* ================ FOOTER ELEMENTS ================ */
+
+.footer
+{
+    background-color: #B3E5FC;
+    border-top: inset;
+    border-color: #6cccf9;
+    padding: 4%;
+    vertical-align: center;
+}
+
+.footer a
+{
+  padding: 0% 14% 0 14%;
 }

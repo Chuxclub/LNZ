@@ -57,6 +57,8 @@ a:hover
   height: 100%;
   padding-top: 1%;
   background-color: #B3E5FC;
+  border-bottom: outset;
+  border-color: #6cccf9;
 }
 
 .mainTitle
@@ -165,6 +167,21 @@ a:hover
     clear: both;
     position: relative;
     top: 30px;
-    padding: 30px 0 30px 0;
+    padding: 30px 0 30px 20px;
     background-color: #B3E5FC;
+    border-top: inset;
+    border-color: #6cccf9;
+}
+
+.credits
+{
+  font-size: 10px;
+  font-style: italic;
+  padding: 0 0 0 80%;
+}
+
+.sponsors
+{
+  display: inline-block;
+  float: left;
 }

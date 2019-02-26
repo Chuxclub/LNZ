@@ -1,0 +1,73 @@
+/* ============= CONTENT ELEMENTS ============= */
+
+body
+{
+  background-color: floralwhite;
+  font-family: 'Mali', cursive;
+  margin: 0;
+}
+
+#Site_map h1
+{
+  display: block;
+  position: relative;
+  font-family: 'Lobster', cursive;
+  padding: 2% 0 2% 50%;
+  margin: inherit;
+  background-color: #B3E5FC;
+  border-bottom: outset;
+  border-color: #6cccf9;
+}
+
+#Site_map h2
+{
+  font-family: 'Lobster', cursive;
+  font-weight: lighter;
+  padding-top: 1%;
+}
+
+p
+{
+  white-space: pre;
+}
+
+
+
+/* ============= FOOTER ELEMENTS ============= */
+
+.footer
+{
+    clear: both;
+    display: block;
+    position: relative;
+    top: 30px;
+    padding: 2% 0 2% 0;
+    background-color: #B3E5FC;
+    border-top: inset;
+    border-color: #6cccf9;
+}
+
+.footer_caption
+{
+  display: inline-block;
+  float: left;
+}
+
+.kiwi
+{
+  display: inline-block;
+  position: relative;
+  left: 85%;
+  height: 60px;
+  width: 60px;
+}
+
+.kiwi_caption
+{
+  clear:both;
+  display: inline-block;
+  position: relative;
+  left: 70%;
+  white-space: pre;
+  font-size: 12px;
+}

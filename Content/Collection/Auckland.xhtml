@@ -11,9 +11,10 @@
     <title>Auckland</title>
 </head>
 
+
 <body>
 
-<!-- Te Wahipounamu region global description -->
+<!-- ============== HEADER ============== -->
 
 <div class="header">
       <h1 class="mainTitle" id="Otago">
@@ -25,12 +26,17 @@
       </h1>
 </div>
 
+
+<!-- ============== CONTENT ============== -->
+
 <div class="content">
+
+                  <!-- Auckland region global description -->
 
   <div class="region">
 
     <div class="nature">
-        <h2>Nature</h2>
+        <h2 id="nature">Nature</h2>
 
         <div class="weather">
             <h3 id="weather">Météo</h3>
@@ -82,7 +88,7 @@
         </div>
 
         <div class="wildlife">
-            <h3>Faune et Flore</h3>
+            <h3 id="wildlife">Faune et Flore</h3>
 
             <p>Peu d'espèces d'oiseaux et d'insectes y vivent à cause de la terre riche en acides et de la flore
                 poussant sur la terr</p>
@@ -90,14 +96,15 @@
     </div>
 
     <hr/>
-    <!-- Te Wahipounamu places -->
+
+                      <!-- Auckland places -->
 
     <div class="place">
 
         <h1 id="Auckland_City" class="mainTitle">Auckland City</h1>
         <div class="loc">
 
-          <h2> Location </h2>
+          <h2 id="loc"> Emplacement </h2>
             <p class="gps">36° 51′ 00″ sud, 174° 47′ 00″ est</p>
             <p>
                 Auckland est située sur et autour d'un isthme, reliant la Péninsule de Northland au reste de l'île du Nord,
@@ -111,35 +118,35 @@
              class="photo"/>
 
         <div class="economy">
-            <h2>Economie</h2>
+            <h2 id="economy">Economie</h2>
 
-            <h3>Fonction du lieu</h3>
+            <h3 id="function">Fonction du lieu</h3>
             <ul>
                 <li>Business</li>
             </ul>
 
-            <h3>Opportunités d'embauche</h3>
+            <h3 id="opportunities">Opportunités d'embauche</h3>
             <ul>
                 <li> Niveau: Très haut</li>
                 <li> Diversité: Forte</li>
             </ul>
 
-            <h3>Services</h3>
+            <h3 id="services">Services</h3>
             <ul>
                 <li> Niveau: Très haut</li>
                 <li> Diversité: Forte</li>
             </ul>
 
-            <h3>Population</h3>
+            <h3 id="population">Population</h3>
             <p>1 529 300 habitants</p>
 
-            <h3>Location/Propriété</h3>
+            <h3 id="housing">Location/Propriété</h3>
             <p>Prix : Très élevé</p>
         </div>
     </div>
 
     <div class="social">
-        <h2>Social</h2>
+        <h2 id="social">Social</h2>
 
         <p>
             <span class="history">L'isthme fut tout d'abord occupé par les Māori qui s'y établirent autour de l'an 1350,
@@ -185,7 +192,10 @@
   </div>
 </div>
 
-<div class="nav">
+
+<!-- ============== NAV ============== -->
+
+      <div class="nav">
             <h1 class="mainTitle"> Sommaire </h1>
 
             <img src="../../Images/TW.png" alt="Te Wahipounamu's map"
@@ -200,7 +210,7 @@
                           <a href="#weather"> Météo </a>
                         </li>
                         <li>
-                          <a href="geology"> Géologie </a>
+                          <a href="#geology"> Géologie </a>
                         </li>
                         <li>
                             <a href="#wildlife"> Faune et Flore </a>
@@ -210,11 +220,13 @@
             </ul>
 
             <h2>Les lieux</h2>
-
             <ul>
-              <li>Auckland City
 
+              <li>Auckland City
                   <ul>
+                        <li>
+                            <a href="#loc"> Emplacement </a>
+                        </li>
                         <li>
 
                           <a href="#economy"> Economie </a>
@@ -231,6 +243,9 @@
                             <li>
                               <a href="#population"> Population </a>
                             </li>
+                            <li>
+                              <a href="#housing">Location/Propriété</a>
+                            </li>
                           </ol>
 
                         </li>
@@ -238,34 +253,42 @@
                         <li>
                             <a href="#social"> Social </a>
                         </li>
-
                   </ul>
-
               </li>
 
             </ul>
 
             <p>
                 <a href="../../index.xhtml">
-                  <img src="../../Images/home.png" class="home"/>
+                  <img src="../../Images/home.png" alt="Accueil" class="home"/>
                 </a>
 
                 <a href="./Te Wahipounamu.xhtml">
-                  <img src="../../Images/previous.png" class="previous"/>
+                  <img src="../../Images/previous.png" alt="Préc." class="previous"/>
                 </a>
 
                 <a href="./otago.xhtml">
-                  <img src="../../Images/next.png" class="next"/>
+                  <img src="../../Images/next.png" alt="Suiv." class="next"/>
                 </a>
             </p>
-</div>
-
-<div class="footer">
-
-  <p>#Powered by Kiwis</p>
+      </div>
 
 
-</div>
+<!-- ============== FOOTER ============== -->
 
-</body>
+      <div class="footer">
+        <p class="sponsors">#Powered by Kiwis and Wikis*
+
+        </p>
+
+        <p class="credits">
+          *Thank you Wikipedia, Wikimedia and Wikivoyage!
+          <br/>
+          Also, many thanks to onlinewebfonts, free-icons-download,
+          <br/>
+          moatours.co.nz and evaneos.fr for the pictures!
+        </p>
+      </div>
+
+    </body>
 </html>

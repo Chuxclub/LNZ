@@ -1,0 +1,76 @@
+/* Style qui s'applique à l'ensemble du corps du document */
+body
+{
+    background-color: floralwhite; /* Couleur de fond de la page : toutes les couleurs prédéfinies sont définies ici : https://www.w3.org/TR/css-color-4/#named-colors */
+    margin: 0;
+}
+
+h1
+{
+  display: block;
+  position: relative;
+  top: 50px 0 0 0;
+  font-family: Lobster;
+  padding: 2% 0 2% 0;
+  background-color: #B3E5FC;
+  border-bottom: outset;
+  border-color: #6cccf9;
+  margin: inherit;
+  padding-left: 40%;
+  margin-bottom: 3%;
+}
+
+/*
+Style qui s'applique aux tableaux
+ */
+
+table
+{
+    border-style : solid; /* une ligne pour la bordure */
+    border-color : grey; /* la bordure est de couleur noire */
+    border-width : 1px; /* épaisseur de la bordure de 2 pixels */
+    text-align: center; /* pour que le texte soit centré */
+    border-collapse: collapse; /* pour que les bordures des cases et du tableau soient fusionnées */
+    margin : auto; /* pour que le tableau soit centré */
+    font-family: Mali;
+}
+
+/*
+Style qui s'applique aux cases des tableaux
+ */
+
+td,th
+{
+    border-style : solid;
+    border-color : grey;
+    border-width : 1px;
+    padding: 20px 10px 20px 10px;
+}
+
+thead
+{
+  font-family: Lobster;
+  font-weight: lighter;
+}
+
+.miniature
+{
+  height: 10%;
+  width: 10%;
+}
+
+/* Autres éléments */
+
+.kiwi
+{
+  padding-top: 25px;
+  padding-left: 48%;
+  height: 100px;
+  width: 100px;
+}
+
+.kiwi_caption
+{
+  white-space: pre;
+  padding-left: 47%;
+}
