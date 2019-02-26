@@ -4,7 +4,10 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" href="../../Styles/collection_element.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster"/>
+  <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"/>
     <title>Auckland</title>
 </head>
 
@@ -12,16 +15,25 @@
 
 <!-- Te Wahipounamu region global description -->
 
-<div class="region">
-    <h1 id="Auckland"> Auckland </h1>
-    <img src="../../Images/langfr-800px-Auckland_in_New_Zealand.svg.png" alt="Auckland's map"
-         height="30%" width="30%"/>
+<div class="header">
+      <h1 class="mainTitle" id="Otago">
+        Auckland
+
+        <a href="../../index.xhtml">
+          <img src="../../Images/kiwi.png" alt="Get me back!" class="kiwi"/>
+        </a>
+      </h1>
+</div>
+
+<div class="content">
+
+  <div class="region">
 
     <div class="nature">
         <h2>Nature</h2>
 
         <div class="weather">
-            <h3>Météo</h3>
+            <h3 id="weather">Météo</h3>
 
             <ul>
                 <li>
@@ -51,7 +63,7 @@
         </div>
 
         <div class="geology">
-            <h3>Geologie</h3>
+            <h3 id="geology">Geologie</h3>
             <p>Type : Volcanique</p>
 
             <p>
@@ -82,19 +94,21 @@
 
     <div class="place">
 
-        <h1 id="Auckland_City">Auckland City</h1>
+        <h1 id="Auckland_City" class="mainTitle">Auckland City</h1>
         <div class="loc">
+
+          <h2> Location </h2>
             <p class="gps">36° 51′ 00″ sud, 174° 47′ 00″ est</p>
             <p>
                 Auckland est située sur et autour d'un isthme, reliant la Péninsule de Northland au reste de l'île du Nord,
                 large de moins de deux kilomètres à son point le plus étroit, situé au sud à Otahuhu entre l'anse Mangere
                 et la rivière Tamaki.
             </p>
+
         </div>
-        <img src="../../Images/Auckland_WV_districts_map_EN.png" alt="Auckland's map"
-             height="30%" width="30%"/>
 
-
+        <img src="../../Images/Auckland_Districts.png" alt="Auckland's map"
+             class="photo"/>
 
         <div class="economy">
             <h2>Economie</h2>
@@ -168,8 +182,88 @@
         </p>
 
     </div>
+  </div>
+</div>
 
-    <hr />
+<div class="nav">
+            <h1 class="mainTitle"> Sommaire </h1>
+
+            <img src="../../Images/TW.png" alt="Te Wahipounamu's map"
+                     class="miniature"/>
+
+            <h2>La région</h2>
+            <ul>
+                <li>
+                    <a href="#nature"> Nature </a>
+                    <ol>
+                        <li>
+                          <a href="#weather"> Météo </a>
+                        </li>
+                        <li>
+                          <a href="geology"> Géologie </a>
+                        </li>
+                        <li>
+                            <a href="#wildlife"> Faune et Flore </a>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+
+            <h2>Les lieux</h2>
+
+            <ul>
+              <li>Auckland City
+
+                  <ul>
+                        <li>
+
+                          <a href="#economy"> Economie </a>
+                          <ol>
+                            <li>
+                              <a href="#function"> Fonction du lieu </a>
+                            </li>
+                            <li>
+                              <a href="#opportunities"> Opportunités d'embauche </a>
+                            </li>
+                            <li>
+                              <a href="#services"> Services </a>
+                            </li>
+                            <li>
+                              <a href="#population"> Population </a>
+                            </li>
+                          </ol>
+
+                        </li>
+
+                        <li>
+                            <a href="#social"> Social </a>
+                        </li>
+
+                  </ul>
+
+              </li>
+
+            </ul>
+
+            <p>
+                <a href="../../index.xhtml">
+                  <img src="../../Images/home.png" class="home"/>
+                </a>
+
+                <a href="./Te Wahipounamu.xhtml">
+                  <img src="../../Images/previous.png" class="previous"/>
+                </a>
+
+                <a href="./otago.xhtml">
+                  <img src="../../Images/next.png" class="next"/>
+                </a>
+            </p>
+</div>
+
+<div class="footer">
+
+  <p>#Powered by Kiwis</p>
+
 
 </div>
 
