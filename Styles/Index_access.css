@@ -2,14 +2,16 @@
 
 body
 {
-  font-family: 'Mali', cursive;
-  background: floralwhite;
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  background: white;
   margin: 0px;
   text-align: center;
 }
 
 a:link
 {
+  color: white;
   text-decoration: none;
 }
 
@@ -24,10 +26,12 @@ a:hover
 
 .header
 {
-    font-family: 'Lobster',cursive;
-    background-color: #B3E5FC;
+    font-family: arial, sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: black;
     border-bottom: outset;
-    border-color: #6cccf9;
+    border-color: lightgrey;
     padding : 2%;
 }
 
@@ -56,13 +60,13 @@ a:hover
 
 .frame
 {
-    font-size: 12px;
+    font-size: 18px;
     display: table-cell;
 }
 
 .miniature
 {
-  max-width: 30%;
+  max-width: 40%;
   height: auto;
 }
 
@@ -70,7 +74,7 @@ a:hover
 {
   position: relative;
   display: inline;
-  left: -30%;
+  left: -29%;
   max-width: 1.1%;
   height: auto;
 }
@@ -85,12 +89,13 @@ a:hover
 
 #date
 {
-  font-family: 'Mali', cursive;
+  font-family: arial, sans-serif;
+  font-size: 18px;
   position: relative;
   display: inline;
-  background-color: floralwhite;
+  background-color: white;
   width: 500px;
-  left: -30%;
+  left: -29%;
 }
 
 #access_icon
@@ -104,14 +109,12 @@ a:hover
 
 .footer
 {
-    background-color: #B3E5FC;
+    color: white;
+    background-color: black;
     border-top: inset;
-    border-color: #6cccf9;
+    border-color: lightgrey;
     padding: 4%;
     vertical-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
 .footer a

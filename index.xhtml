@@ -7,18 +7,28 @@
 
     <head>
         <title>LNZ</title>
-        <link rel="stylesheet" href="Styles/index.css"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster"/>
-        <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"/>
+
+        <!-- Style except fonts -->
+        <link rel="stylesheet" media="screen" href="Styles/index.css" title="Main"/>
+        <link rel="alternate stylesheet" media="screen" href="Styles/Index_access.css" title="Accessibility"/>
+
+        <!-- Font styles -->
+        <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Lobster"/>
+        <link href="https://fonts.googleapis.com/css?family=Mali" media="screen" rel="stylesheet"/>
+
+        <!-- Others -->
+        <script type="application/javascript" src="./Javascript/index_CDO.js"> </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     </head>
 
-    <body>
+    <body onload="display_fr_hour()">
 
 <!-- ============== HEADER ============== -->
 
         <div class="header">
-          <h1> Love New Zealand </h1>
+          <h1>
+            Love New Zealand
+          </h1>
         </div>
 
 
@@ -36,43 +46,62 @@
 
 <!-- ============== NAV ============== -->
 
-        <table class="nav">
-            <tr>
+        <div class="nav">
+            <div class="row">
 
-                <td>
-                    <div class="frame">
+                <div class="frame">
+                      <a href="./Content/Collection/Auckland.xhtml">
+                          <img src="./Images/previous.png" alt="previous" class="miniature"/>
+                      </a>
+                </div>
+
+                <div class="frame">
                         <a href="./Content/Collection/Auckland.xhtml">
                             <img src="./Images/Auckland.png" alt="Auckland's map" class="miniature"/>
                         </a>
                         <p>Auckland</p>
-                    </div>
-                </td>
+                </div>
 
-                <td>
-                    <div class="frame">
+                <div class="frame">
                         <a href="./Content/Collection/otago.xhtml">
                             <img src="./Images/Otago.png" alt="Otago's map" class="miniature"/>
                         </a>
                         <p>Otago</p>
-                    </div>
-                </td>
+                </div>
 
-                <td>
-                    <div class="frame">
+                <div class="frame">
                         <a href="./Content/Collection/Te%20Wahipounamu.xhtml">
                             <img src="./Images/TW.png" alt="Te Wahipounamu's map" class="miniature"/>
                         </a>
                         <p>Te Wahipounamu</p>
-                    </div>
-                </td>
+                </div>
 
-            </tr>
-        </table>
+                <div class="frame">
+                      <a href="./Content/Forms/add_region_form.xhtml">
+                          <img src="./Images/plus_icon_pixabay.png" alt="Ajouter une nouvelle région" class="miniature"/>
+                      </a>
+                      <p>Ajouter une nouvelle région</p>
+                </div>
 
+                <div class="frame">
+                      <a href="./Content/Collection/Auckland.xhtml">
+                          <img src="./Images/next.png" alt="next" class="miniature"/>
+                      </a>
+                </div>
+            </div>
+        </div>
 
 <!-- ============== FOOTER ============== -->
 
-        <div class="footer">
+        <div id="timezone">
+          <img src="./Images/Flag_of_France.svg" alt="France flag icon" class="icon" onclick="blink_timezone_flag()"/>
+          <img src="./Images/Flag_of_France.svg" alt="France flag icon" class="icon_hidden"/>
+          <img src="./Images/nz_flag_wikicommons.svg" alt="NZ flag icon" class="icon_hidden"/>
+          <input id="date" type="text" value="" readonly="readonly" onclick="blink_timezone_flag()"/>
+          <img src="./Images/access_freeicondownload.png" alt="click here to see better" id="access_icon" onclick="go_to_access()"/>
+        </div>
+
+        <div class="footer">    
             <a href="./Content/Miscellaneous/Site_map.xhtml">
                 Plan du Site
             </a>

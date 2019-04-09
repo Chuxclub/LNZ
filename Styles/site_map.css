@@ -7,6 +7,18 @@ body
   margin: 0;
 }
 
+#Site_map
+{
+  padding-bottom: 18.5vh;
+}
+
+.icon
+{
+  display: inline-block;
+  height: 2%;
+  width: 2%;
+}
+
 #Site_map h1
 {
   display: block;
@@ -22,6 +34,7 @@ body
 #Site_map h2
 {
   font-family: 'Lobster', cursive;
+  display: block;
   font-weight: lighter;
   padding-top: 1%;
 }
@@ -31,6 +44,15 @@ p
   white-space: pre;
 }
 
+h2+ul
+{
+  display: none;
+}
+
+li>ul
+{
+  display: none;
+}
 
 
 /* ============= FOOTER ELEMENTS ============= */

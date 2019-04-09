@@ -1,0 +1,62 @@
+/* ================= Global blocks ================= */
+
+body
+{
+  font-family: 'Mali', cursive;
+  background: floralwhite;
+  margin: 0px;
+  text-align: center;
+}
+
+
+
+/* ================= Header blocks ================= */
+
+#header, #footer
+{
+  background-color: #B3E5FC;
+}
+
+#header
+{
+  font-family: 'Lobster',cursive;
+  border-bottom: outset;
+  border-color: #6cccf9;
+  padding : 2%;
+}
+
+
+
+/* ================= Content blocks ================= */
+
+#content
+{
+  padding: 2%;
+}
+
+form
+{
+  padding: 2%;
+  border: 2px solid black;
+}
+
+#content label
+{
+  display: block;
+}
+
+/* ================= Footer blocks ================= */
+#footer
+{
+    border-top: inset;
+    border-color: #6cccf9;
+    padding: 4%;
+    vertical-align: center;
+}
+
+.kiwi
+{
+  padding-left: 10px;
+  height: 60px;
+  width: 60px;
+}

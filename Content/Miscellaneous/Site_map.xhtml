@@ -4,14 +4,20 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster"/>
-    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"/>
-    <link rel="stylesheet" href="../../Styles/site_map.css"/>
+
+    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Lobster"/>
+    <link href="https://fonts.googleapis.com/css?family=Mali" media="screen" rel="stylesheet"/>
+    <link rel="stylesheet" media="screen" href="../../Styles/site_map.css"/>
+
+    <script type="application/javascript" src="../../Javascript/site_map_CDO.js"> </script>
+
     <title>Plan du Site</title>
 
 </head>
+
 <body>
     <div id="Site_map">
         <h1>Plan du Site</h1>
@@ -20,77 +26,95 @@
 index.xhtml
 README.txt</p>
 
-                <h2>Content</h2>
-                <ul>
-                    <li>
-                        Collection
-                        <ul>
-                            <li>Auckland.xhtml</li>
-                            <li>index.html</li>
-                            <li>otago.xhtml</li>
-                            <li>Te Wahipounamou.xhtml</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Forms
-                        <ul>
-                            <li>index.html</li>
-                        </ul>
-                    </li>
-                    <li>
-                        Miscellaneous
-                        <ul>
-                            <li>index.html</li>
-                            <li>Site_map.xhtml</li>
-                            <li>Synoptic.xhtml</li>
-                        </ul>
-                    </li>
-                    <li>index.html</li>
-                </ul>
+              <h2>Content <img src="../../Images/plus_icon_pixabay.png"
+                               alt="+" class="icon" onclick="unfold_content()"/> </h2>
+              <ul id="Content">
+                  <li>
+                      Collection <img src="../../Images/plus_icon_pixabay.png"
+                                       alt="+" class="icon" onclick="unfold_collection()"/>
+                      <ul id="Collection">
+                          <li>Auckland.xhtml</li>
+                          <li>index.html</li>
+                          <li>otago.xhtml</li>
+                          <li>Te Wahipounamou.xhtml</li>
+                      </ul>
+                  </li>
+                  <li>
+                      Forms <img src="../../Images/plus_icon_pixabay.png"
+                                       alt="+" class="icon" onclick="unfold_forms()"/>
+                      <ul id="Forms">
+                          <li>index.html</li>
+                      </ul>
+                  </li>
+                  <li>
+                      Miscellaneous <img src="../../Images/plus_icon_pixabay.png"
+                                       alt="+" class="icon" onclick="unfold_misc()"/>
+                      <ul id="Miscellaneous">
+                          <li>index.html</li>
+                          <li>Site_map.xhtml</li>
+                          <li>Synoptic.xhtml</li>
+                      </ul>
+                  </li>
+                  <li>index.html</li>
+              </ul>
 
-                <h2>Images</h2>
-                <ul>
-                    <li>560px-New_Zeland_relief_map.jpg</li>
-                    <li>Auckland_City.jpg</li>
-                    <li>Auckland_Districts.jpg</li>
-                    <li>Auckland.png</li>
-                    <li>home.png</li>
-                    <li>index.html</li>
-                    <li>kiwi.png</li>
-                    <li>Lake_Wanaka_View.jpg</li>
-                    <li>mount_aspiring_map.jpg</li>
-                    <li>next.png</li>
-                    <li>NZ_relief_map.jpg</li>
-                    <li>Otago.png</li>
-                    <li>previous.png</li>
-                    <li>tewahipounamu_nature.jpg</li>
-                    <li>TW.png</li>
-                    <li>wanaka_map.png</li>
-                </ul>
 
-                <h2>Javascript</h2>
-                <ul>
-                    <li>index.html</li>
-                </ul>
+              <h2>Images <img src="../../Images/plus_icon_pixabay.png"
+                              alt="+" class="icon" onclick="unfold_img()"/> </h2>
+              <ul id="Images">
+                  <li>560px-New_Zeland_relief_map.jpg</li>
+                  <li>Auckland_City.jpg</li>
+                  <li>Auckland_Districts.jpg</li>
+                  <li>Auckland.png</li>
+                  <li>Flag_of_France.svg</li>
+                  <li>france_icone_pixabaycom.png</li>
+                  <li>home.png</li>
+                  <li>index.html</li>
+                  <li>kiwi.png</li>
+                  <li>Lake_Wanaka_View.jpg</li>
+                  <li>mount_aspiring_map.jpg</li>
+                  <li>next.png</li>
+                  <li>nz_flag_wikicommons.svg</li>
+                  <li>NZ_relief_map.jpg</li>
+                  <li>Otago.png</li>
+                  <li>plus_icon_pixabay.png</li>
+                  <li>previous.png</li>
+                  <li>tewahipounamu_nature.jpg</li>
+                  <li>TW.png</li>
+                  <li>wanaka_map.png</li>
+              </ul>
 
-                <h2>Styles</h2>
-                <ul>
-                    <li>collection_element.css</li>
-                    <li>index.css</li>
-                    <li>index.html</li>
-                    <li>site_map.css</li>
-                    <li>synoptic.css</li>
-                    <li>vstyle.zip</li>
-                </ul>
 
-                <h2>XML</h2>
-                <ul>
-                    <li>index.html</li>
-                    <li>nzplaces.dtd</li>
-                    <li>nzplaces.xml</li>
-                </ul>
+              <h2>Javascript <img src="../../Images/plus_icon_pixabay.png"
+                                  alt="+" class="icon" onclick="unfold_js()"/> </h2>
 
-                <div class="footer">
+              <ul id="Javascript">
+                  <li>index_CDO.js</li>
+                  <li>index.html</li>
+                  <li>site_map_CDO.js</li>
+              </ul>
+
+              <h2>Styles <img src="../../Images/plus_icon_pixabay.png"
+                                     alt="+" class="icon" onclick="unfold_css()"/> </h2>
+              <ul id="Styles">
+                  <li>collection_element.css</li>
+                  <li>index.css</li>
+                  <li>index.html</li>
+                  <li>site_map.css</li>
+                  <li>synoptic.css</li>
+                  <li>vstyle.zip</li>
+              </ul>
+
+              <h2>XML <img src="../../Images/plus_icon_pixabay.png"
+                           alt="+" class="icon" onclick="unfold_xml()"/> </h2>
+              <ul id="XML">
+                  <li>index.html</li>
+                  <li>nzplaces.dtd</li>
+                  <li>nzplaces.xml</li>
+              </ul>
+       </div>
+
+       <div class="footer">
                   <p class="footer_caption">#Powered by Kiwis</p>
 
                   <a href="../../index.xhtml">
@@ -100,7 +124,8 @@ README.txt</p>
 <p class="kiwi_caption">    Clique sur le kiwi
 pour revenir à l'accueil!</p>
 
-                </div>
-    </div>
+      </div>
+
 </body>
+
 </html>

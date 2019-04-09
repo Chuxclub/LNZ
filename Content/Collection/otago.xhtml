@@ -6,11 +6,19 @@
 <html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" href="../../Styles/collection_element.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster"/>
-    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet"/>
-    <title>Otago</title>
+  <title>Otago</title>
+
+  <!-- Style except fonts -->
+  <link rel="stylesheet" media="screen" href="../../Styles/collection_element.css" title="Main"/>
+  <link rel="alternate stylesheet" media="screen" href="../../Styles/collection_element_access.css" title="Accessibility"/>
+
+  <!-- Font styles -->
+  <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Lobster"/>
+  <link href="https://fonts.googleapis.com/css?family=Mali" media="screen" rel="stylesheet"/>
+
+  <!-- Others -->
+  <script type="application/javascript" src="../../Javascript/collection_CDO.js"> </script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 
 
@@ -26,6 +34,9 @@
           <img src="../../Images/kiwi.png" alt="Get me back!" class="kiwi"/>
         </a>
       </h1>
+
+      <img src="../../Images/access_freeicondownload.png" alt="click here to see better" 
+           id="access_icon" onclick="go_to_access()"/>
 </div>
 
 
