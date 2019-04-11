@@ -2,9 +2,10 @@
 
 #access_icon
 {
+  filter: invert() brightness(200%);
   display: block;
   position: relative;
-  right: -95%;
+  right: -92%;
   max-width: 4%;
   height: auto;
 }
@@ -12,41 +13,44 @@
 
 /* ============= CONTENT ELEMENTS ============= */
 
-#container
-{
-  height: 100%;
-  position: relative;
-}
-
 body
 {
-  background-color: floralwhite;
-  font-family: 'Mali', cursive;
+  background-color: white;
+  font-family: arial, sans-serif;
+  font-size: 25px;
   margin: 0;
+}
+
+#Site_map
+{
+  padding-bottom: 15vh;
 }
 
 .icon
 {
   display: inline-block;
-  height: 2%;
-  width: 2%;
+  height: 4%;
+  width: 4%;
 }
 
 #Site_map h1
 {
   display: block;
   position: relative;
-  font-family: 'Lobster', cursive;
-  padding: 2% 0 2% 50%;
+  font-family: arial, sans-serif;
+  font-size: 45px;
+  color: white;
+  padding: 2% 0 2% 45%;
   margin: inherit;
-  background-color: #B3E5FC;
+  background-color: black;
   border-bottom: outset;
-  border-color: #6cccf9;
+  border-color: lightgrey;
 }
 
 #Site_map h2
 {
-  font-family: 'Lobster', cursive;
+  font-family: arial, sans-serif;
+  font-size: 35px;
   display: block;
   font-weight: lighter;
   padding-top: 1%;
@@ -75,20 +79,16 @@ a
 
 /* ============= FOOTER ELEMENTS ============= */
 
-.spacer
-{
-  position: relative;
-  padding-top: 35.4vh;
-}
-
 .footer
 {
-  background-color: #B3E5FC;
+  background-color: black;
   border-top: inset;
-  border-color: #6cccf9;
+  border-color: lightgrey;
+  color: white;
   padding: 4%;
-  position: absolute;
-  width: 92%;
+  vertical-align: center;
+  position: fixed;
+  width: 100%;
   bottom: 0;
 }
 

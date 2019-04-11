@@ -8,19 +8,29 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
+    <title>Site Map</title>
+
+    <!-- Style except fonts -->
+    <link rel="stylesheet" media="screen" href="../../Styles/site_map.css" title="Main"/>
+    <link rel="alternate stylesheet" media="screen" href="../../Styles/site_map_access.css" title="Accessibility"/>
+
+    <!-- Font styles -->
     <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Lobster"/>
     <link href="https://fonts.googleapis.com/css?family=Mali" media="screen" rel="stylesheet"/>
-    <link rel="stylesheet" media="screen" href="../../Styles/site_map.css"/>
 
+    <!-- Others -->
     <script type="application/javascript" src="../../Javascript/site_map_CDO.js"> </script>
-
-    <title>Plan du Site</title>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 
 <body>
+  <div id="container">
     <div id="Site_map">
-        <h1>Plan du Site</h1>
+        <h1>
+          Plan du Site
+
+          <img src="../../Images/access_freeicondownload.png" alt="click here to see better" id="access_icon" onclick="go_to_access()"/>
+        </h1>
 
 <p>index.html
 index.xhtml
@@ -112,8 +122,10 @@ README.txt</p>
                   <li>nzplaces.dtd</li>
                   <li>nzplaces.xml</li>
               </ul>
-       </div>
 
+       <div class="spacer">
+       </div>
+       
        <div class="footer">
                   <p class="footer_caption">#Powered by Kiwis</p>
 
@@ -125,6 +137,8 @@ README.txt</p>
 pour revenir à l'accueil!</p>
 
       </div>
+    </div>
+  </div>
 
 </body>
 
