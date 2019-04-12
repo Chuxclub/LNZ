@@ -50,6 +50,11 @@ a:hover
   color:red;
 }
 
+*::selection
+{
+  color: hotpink;
+}
+
 /* ================= Header blocks ================= */
 
 .header

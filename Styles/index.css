@@ -19,6 +19,11 @@ a:hover
   color:red;
 }
 
+*::selection
+{
+  color: hotpink;
+}
+
 /* ================ HEADER ELEMENTS ================ */
 
 .header

@@ -8,6 +8,11 @@ body
   text-align: center;
 }
 
+*::selection
+{
+  color: hotpink;
+}
+
 
 
 /* ================= Header blocks ================= */

@@ -1,3 +1,11 @@
+/* ============== GLOBAL ELEMENTS ============== */
+
+*::selection
+{
+  color: hotpink;
+}
+
+
 /* ============== HEADER ELEMENTS ============== */
 
 #access_icon

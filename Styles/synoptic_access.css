@@ -2,6 +2,8 @@
 body
 {
     background-color: floralwhite;
+    font-family: arial, sans-serif;
+    font-size: 25px;
     margin: 0;
 }
 
@@ -16,12 +18,13 @@ h1
 {
   display: block;
   position: relative;
+  font-size: 45px;
+  color: white;
   top: 50px 0 0 0;
-  font-family: Lobster;
   padding: 2% 0 1% 0;
-  background-color: #B3E5FC;
+  background-color: black;
   border-bottom: outset;
-  border-color: #6cccf9;
+  border-color: lightgrey;
   margin: inherit;
   padding-left: 40%;
   margin-bottom: 3%;
@@ -31,6 +34,7 @@ h1
 {
   display: block;
   position: relative;
+  filter: invert() brightness(200%);
   left: 96%;
   max-width: 3%;
   height: auto;
@@ -54,7 +58,7 @@ td,th
     border-style : solid;
     border-color : grey;
     border-width : 1px;
-    padding: 20px 10px 20px 10px;
+    padding: 12px 7px 12px 7px;
 }
 
 thead
@@ -75,12 +79,12 @@ thead
 {
   padding-top: 25px;
   padding-left: 48%;
-  height: 100px;
-  width: 100px;
+  height: auto;
+  width: 6%;
 }
 
 .kiwi_caption
 {
   white-space: pre;
-  padding-left: 47%;
+  padding-left: 45%;
 }
