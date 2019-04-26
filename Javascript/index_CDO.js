@@ -260,18 +260,23 @@ function change_timezone_flag()
   let flags = document.getElementsByClassName("icon_hidden");
 
   let french_flag = flags[0].src;
+  let french_caption = flags[0].title;
   let nz_flag = flags[1].src;
+  let nz_caption = flags[1].title;
+
   let current_flag = visible_flag[0].src;
 
   if(current_flag == french_flag)
   {
     visible_flag[0].src = nz_flag;
+    visible_flag[0].title = nz_caption;
     display_nz_hour();
   }
 
   else
   {
     visible_flag[0].src = french_flag;
+    visible_flag[0].title = french_caption;
     display_fr_hour();
   }
 }
