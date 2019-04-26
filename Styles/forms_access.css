@@ -2,8 +2,10 @@
 
 body
 {
-  font-family: 'Mali', cursive;
-  background: floralwhite;
+  font-family: arial, sans-serif;
+  font-size: 25px;
+  background-color: white;
+  height: 100%;
   margin: 0px;
   text-align: center;
 }
@@ -17,6 +19,7 @@ body
 {
   display: block;
   position: relative;
+  filter: invert() brightness(200%);
   left: 95%;
   max-width: 2%;
   height: auto;
@@ -31,14 +34,16 @@ body
 
 #header
 {
-  font-family: 'Lobster',cursive;
+  color: white;
+  background-color: black;
   border-bottom: outset;
-  border-color: #6cccf9;
+  border-color: lightgrey;
   padding : 2% 0 1% 0;
 }
 
 #header h1
 {
+  font-family: arial, sans-serif;
   display: inline-block;
   margin-right: 50px;
   margin-left: 50px;
@@ -119,7 +124,9 @@ table
 #footer
 {
     border-top: inset;
-    border-color: #6cccf9;
+    border-color: lightgrey;
+    background-color: black;
+    color: white;
     padding: 4%;
     vertical-align: center;
 }

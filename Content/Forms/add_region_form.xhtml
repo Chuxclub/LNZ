@@ -6,11 +6,19 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
 
     <head>
-        <title>LNZ</title>
-        <link rel="stylesheet" media="screen" href="../../Styles/forms.css"/>
+        <title>Formulaire de nouvelle région</title>
+
+        <!-- Style except fonts -->
+        <link rel="stylesheet" media="screen" href="../../Styles/forms.css" title="Main"/>
+        <link rel="alternate stylesheet" media="screen" href="../../Styles/forms_access.css" title="Accessibility"/>
+
+        <!-- Font styles -->
         <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Lobster"/>
         <link href="https://fonts.googleapis.com/css?family=Mali" media="screen" rel="stylesheet"/>
-        <script type="application/javascript" src="./Javascript/index_CDO.js"> </script>
+
+        <!-- Others -->
+        <script type="application/javascript" src="../../Javascript/forms_CDO.js"> </script>
+        <script type="application/javascript" src="../../Javascript/index_CDO.js"> </script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     </head>
 
@@ -23,7 +31,14 @@
 
 
         <div id="header">
-          <h1>Formulaire</h1>
+          <h1>
+            Ajoutez une nouvelle région!
+          </h1>
+
+          <img src="../../Images/nz_flag_wikicommons.svg" alt="New-Zealand flag"
+               class="flag"/>
+
+          <img src="../../Images/access_freeicondownload.png" alt="click here to see better" id="access_icon" onclick="go_to_access()"/>
         </div>
 
                 <!-- =================================================== -->
@@ -35,33 +50,238 @@
                 <!-- =================================================== -->
 
         <div id="content">
-          <form action="https://autodilab.wordpress.com/" method="get">
-                <p>
-                  <label for="region_name">Nom de la région</label>
-                  <input type="text" name="region_name" id="region_name"/>
-                </p>
+          <form action="http://10.16.21.1/~salayran/traitement.php" method="post">
 
-                <p>
-                  <label for="weather">Météo</label>
-                  <textarea name="weather" rows="5" cols="50" id="weather"></textarea>
-                </p>
 
-                <p>
-                  <label for="geology">Géologie</label>
-                  <textarea name="geology" rows="5" cols="50" id="geology"></textarea>
-                </p>
+                <!-- ===================== Region ===================== -->
+                    <p>
+                      <label for="region_name">Entrez le nom de la nouvelle région:</label>
+                      <input type="text" name="region_name" id="region_name" class="short_input"
+                             onblur="letters_only_check(this)"/>
+                    </p>
 
-                <p>
-                  <label for="wildlife">Faune et Flore</label>
-                  <textarea name="wildlife" rows="5" cols="50" id="wildlife"></textarea>
-                </p>
+                    <fieldset>
+                      <legend>Décrivez-nous l'environnement de la nouvelle région  </legend>
+                      <label for="weather" class="long_input">Sa météo</label>
+                      <textarea name="weather" rows="5" cols="50" id="weather"
+                                onblur="no_special_char_check(this)"></textarea>
 
-                <p>
-                  <label for="pictures">Images</label>
-                  <textarea name="pictures" rows="5" cols="50" id="pictures"></textarea>
-                </p>
+                      <label for="geology" class="long_input">Sa géologie</label>
+                      <textarea name="geology" rows="5" cols="50" id="geology"
+                                onblur="no_special_char_check(this)"></textarea>
 
-                <p><input type="submit" value="Submit"/></p>
+                      <label for="wildlife" class="long_input">Sa faune et Flore</label>
+                      <textarea name="wildlife" rows="5" cols="50" id="wildlife"
+                                onblur="no_special_char_check(this)"></textarea>
+                    </fieldset>
+
+
+
+                    <!-- ===================== Place ===================== -->
+                    <p>
+                      <label for="region_name">Entrez le nom du lieu que vous souhaitez nous faire découvrir:</label>
+                      <input type="text" name="place_name" id="place_name" class="short_input"
+                             onblur="letters_only_check(this)"/>
+                    </p>
+
+
+                                <!-- *~~~~~~ Economy ~~~~~~* -->
+
+                    <fieldset>
+                      <legend>Décrivez-nous ses activités</legend>
+
+
+                      <!-- Place function -->
+                      <label for="place_function">Fonction du lieu:</label>
+                      <select id="place_function">
+                        <option value="agriculture">agriculture</option>
+                        <option value="industries">industries</option>
+                        <option value="tourisme">tourisme</option>
+                        <option value="business">business</option>
+                        <option value="un peu de tout">un peu de tout</option>
+                        <option value="capital">capital</option>
+                      </select>
+
+
+                      <!-- Jobs Opportunities -->
+                      <table>
+                        <tr>
+                          <td class="table_title">Opportunités d'emploi:</td>
+                        </tr>
+
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th>Quantité</th>
+                          <th>Diversité</th>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="jobs_quantity" value="Très élevée" checked="checked"/> Très élevée
+                          </td>
+                          <td>
+                            <input type="radio" name="jobs_diversity" value="Très variée" checked="checked"/>Très variée
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="jobs_quantity" value="Elevée"/>Elevée
+                          </td>
+                          <td>
+                            <input type="radio" name="jobs_diversity" value="Variée"/>Variée
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="jobs_quantity" value="Moyenne"/>Moyenne
+                          </td>
+                          <td>
+                            <input type="radio" name="jobs_diversity" value="Moyenne"/>Moyenne
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="jobs_quantity" value="Peu"/>Peu
+                          </td>
+                          <td>
+                            <input type="radio" name="jobs_diversity" value="Faible"/>Faible
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="jobs_quantity" value="Très peu"/>Très peu
+                          </td>
+                          <td>
+                            <input type="radio" name="jobs_diversity" value="Très faible"/>Très faible
+                          </td>
+                        </tr>
+                      </table>
+
+
+                      <!-- Population -->
+                      <label for="population">Population:</label>
+                      <input name="population" id="population" value="Entrez ici le nombre d'habitants"
+                             onclick="erase(this)" onblur="digits_only_check(this)" class="short_input"></input>
+
+                      <!-- Services -->
+                      <table>
+                        <tr>
+                          <td class="table_title">Services:</td>
+                        </tr>
+
+                        <tr>
+                          <th></th>
+                          <th></th>
+                          <th>Quantité</th>
+                          <th>Diversité</th>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="services_quantity" value="Très élevée" checked="checked"/>Très élevée
+                          </td>
+                          <td>
+                            <input type="radio" name="services_diversity" value="Très variée" checked="checked"/>Très variée
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="services_quantity" value="Elevée"/>Elevée
+                          </td>
+                          <td>
+                            <input type="radio" name="services_diversity" value="Variée"/>Variée
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="services_quantity" value="Moyenne"/>Moyenne
+                          </td>
+                          <td>
+                            <input type="radio" name="services_diversity" value="Moyenne"/>Moyenne
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="services_quantity" value="Peu"/>Peu
+                          </td>
+                          <td>
+                            <input type="radio" name="services_diversity" value="Faible"/>Faible
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td>
+                            <input type="radio" name="services_quantity" value="Très peu"/>Très peu
+                          </td>
+                          <td>
+                            <input type="radio" name="services_diversity" value="Très faible"/>Très faible
+                          </td>
+                        </tr>
+                      </table>
+
+
+                      <!-- Housing -->
+                      <label for="housing">Prix du logement:</label>
+                      <select id="housing">
+                        <option value="Très cher">Très cher</option>
+                        <option value="Cher">Cher</option>
+                        <option value="Acceptable">Acceptable</option>
+                        <option value="Bon marché">Bon marché</option>
+                        <option value="Très bon marché">Très bon marché</option>
+                      </select>
+                    </fieldset>
+
+
+
+                                    <!-- *~~~~~~ Social ~~~~~~* -->
+                    <fieldset>
+                      <legend>Décrivez-nous ses habitants, son patrimoine et son histoire </legend>
+                      <label for="history" class="long_input">Histoire</label>
+                      <textarea name="history" rows="5" cols="50" id="history"
+                                onblur="no_special_char_check(this)"></textarea>
+
+                      <label for="politics" class="long_input">Politique</label>
+                      <textarea name="politics" rows="5" cols="50" id="politics"
+                                onblur="no_special_char_check(this)"></textarea>
+
+                      <label for="atmosphere" class="long_input">Ambiance</label>
+                      <textarea name="atmosphere" rows="5" cols="50" id="atmosphere"
+                                onblur="no_special_char_check(this)"></textarea>
+                    </fieldset>
+
+                    <p>
+                      <input type="submit" value="Vérifier" onclick="check_all()"/>
+                      <input type="submit" value="Soumettre" onclick="send_sumup()"/>
+                    </p>
+
           </form>
         </div>
 
@@ -89,10 +309,3 @@
 
     </body>
 </html>
-
-
-<!-- <input type="radio" name="gender" value="male"/> Male <br/>
-<input type="radio" name="gender" value="female"/> Female <br/>
-<input type="checkbox" name="gender" value="1"/> Male <br/>
-<input type="checkbox" name="gender" value="2"/> Female <br/>
-<textarea name="message"></textarea><br/> -->
